@@ -1,0 +1,6 @@
+baseURL = "https://viktorot.github.io/"
+languageCode = "en-us"
+title = "detached HEAD"
+theme = "base16"
+
+disableKinds = ["RSS"]
