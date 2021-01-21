@@ -1,4 +1,5 @@
 {{ $baseurl := .Site.BaseURL }}
+
 <main role="main" class="homepage">
 
   {{ partial "hero.html" . }}
@@ -8,7 +9,9 @@
   {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") (or .Site.Params.paginate 3) }}
   <div class="article-list">
     {{ range $paginator.Pages }}
-      {{ partial "article-list-item.html" . }}
+      {{ if or .Draft (not .Params.hide_on_homepage) }}
+        {{ partial "article-list-item.html" . }}
+      {{ end }}
     {{ end }}
   </div>
 
