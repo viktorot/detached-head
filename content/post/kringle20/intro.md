@@ -25,3 +25,4 @@ In the next few posts I'm gonna write about the challenged them self and how I w
 ## Objectives
 1. [Uncover Santa's Gift List](/post/kringle20/objective1/)
 2. [Investigate S3 Bucket](/post/kringle20/objective2/)
+3. [Point-of-Sale Password Recovery](/post/kringle20/objective3/)
